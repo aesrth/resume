@@ -1,6 +1,6 @@
 # tetikol.com
 
-Personal site for **H. Serhat Tetikol, PhD** — a static site
+Personal site for **Serhat Tetikol, PhD** — a static site
 (HTML + CSS + a little vanilla JS) hosted on GitHub Pages at
 [tetikol.com](https://tetikol.com).
 

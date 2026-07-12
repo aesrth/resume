@@ -353,12 +353,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
 /* ---- Contact ---- */
 .section--contact { padding-bottom: 40px; }
-.contact__edu {
-  margin: 28px 0 0;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.82rem;
-  color: var(--text-faint);
-}
 
 /* ---- Blog listing ---- */
 .blog { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
