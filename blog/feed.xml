@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Serhat Tetikol — The Weekly Read</title>
+    <link>https://tetikol.com/blog/</link>
+    <atom:link href="https://tetikol.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Weekly paper reviews and perspectives on AI in drug discovery, by Serhat Tetikol, PhD.</description>
+    <language>en-us</language>
+    <managingEditor>serhat.tetikol@gmail.com (Serhat Tetikol)</managingEditor>
+    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
+
+    <!--
+      To add a post to the feed: copy the <item> block below to the TOP of the
+      list, and update the title, link, guid, pubDate, and description.
+    -->
+    <item>
+      <title>Why I'm writing a weekly paper review</title>
+      <link>https://tetikol.com/blog/welcome.html</link>
+      <guid isPermaLink="true">https://tetikol.com/blog/welcome.html</guid>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <description>What this blog is, who it's for, and the questions I bring to every paper on AI-driven drug discovery.</description>
+    </item>
+  </channel>
+</rss>

@@ -185,6 +185,16 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   border: none;
 }
 .hero__inner { animation: rise 0.7s ease both; }
+.hero__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bg-elev);
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+  display: block;
+}
 .hero__eyebrow {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.78rem;
@@ -371,6 +381,24 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   color: var(--text-muted);
   max-width: 60ch;
   margin: 0;
+}
+
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.rss-link:hover { color: var(--accent); }
+.rss-link__dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
 .post-list { list-style: none; margin: 0; padding: 40px 0 24px; border-top: 1px solid var(--border); }
