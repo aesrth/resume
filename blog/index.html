@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing — H. Serhat Tetikol, PhD</title>
+  <meta name="description" content="Weekly paper reviews and perspectives on AI in drug discovery, by H. Serhat Tetikol, PhD." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Writing — H. Serhat Tetikol, PhD" />
+  <meta property="og:description" content="Weekly paper reviews and perspectives on AI in drug discovery." />
+  <meta property="og:url" content="https://tetikol.com/blog/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="/">ST</a>
+      <ul class="nav__links">
+        <li><a href="/#focus">Focus</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/blog/" aria-current="page">Writing</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main" class="blog">
+    <header class="blog__head">
+      <p class="hero__eyebrow">The Weekly Read</p>
+      <h1 class="blog__title">Paper reviews &amp; perspectives on AI in drug discovery</h1>
+      <p class="blog__intro">
+        Each week I pick one paper that's moving the field — generative models for biologics,
+        protein structure and design, molecular ML, or the messy realities of putting these methods
+        into a discovery pipeline — and write up what's new, what holds up, and why it matters.
+      </p>
+    </header>
+
+    <ul class="post-list">
+      <!--
+        To add a post: copy blog/welcome.html to blog/<slug>.html, edit it,
+        then add a <li class="post-card"> block here (newest at the top).
+      -->
+      <li class="post-card">
+        <a class="post-card__link" href="/blog/welcome.html">
+          <div class="post-card__meta">
+            <time datetime="2026-07-12">Jul 12, 2026</time>
+            <span class="post-card__tag">Intro</span>
+          </div>
+          <h2 class="post-card__title">Why I'm writing a weekly paper review</h2>
+          <p class="post-card__excerpt">
+            What this blog is, who it's for, and the questions I'll bring to every paper on
+            AI-driven drug discovery.
+          </p>
+          <span class="post-card__more">Read &#8594;</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> H. Serhat Tetikol. Built with static HTML, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

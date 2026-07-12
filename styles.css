@@ -221,12 +221,19 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   margin: 0 0 34px;
 }
 .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero__role {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin: 0 0 26px;
+}
 .hero__loc {
   margin: 26px 0 0;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.82rem;
   color: var(--text-faint);
 }
+.nav__links a[aria-current="page"] { color: var(--accent); }
 
 .btn {
   display: inline-block;
@@ -329,8 +336,129 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .pubs__note { font-size: 0.92rem; color: var(--text-muted); }
 .pubs__note a { color: var(--accent); }
 
+/* ---- Writing teaser ---- */
+.writing-teaser {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+.writing-teaser__lede {
+  font-size: 1.12rem;
+  color: var(--text-muted);
+  margin: 0 0 20px;
+  max-width: 58ch;
+}
+
 /* ---- Contact ---- */
 .section--contact { padding-bottom: 40px; }
+.contact__edu {
+  margin: 28px 0 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.82rem;
+  color: var(--text-faint);
+}
+
+/* ---- Blog listing ---- */
+.blog { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.blog__head { padding: 80px 0 40px; }
+.blog__title {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 14px 0 20px;
+}
+.blog__intro {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 60ch;
+  margin: 0;
+}
+
+.post-list { list-style: none; margin: 0; padding: 40px 0 24px; border-top: 1px solid var(--border); }
+.post-card { margin: 0 0 12px; }
+.post-card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.post-card__link:hover { transform: translateY(-3px); border-color: var(--accent); }
+.post-card__meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+  margin-bottom: 12px;
+}
+.post-card__tag {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.post-card__title {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.post-card__excerpt { color: var(--text-muted); margin: 0 0 16px; }
+.post-card__more { color: var(--accent); font-weight: 500; font-size: 0.95rem; }
+
+/* ---- Post page ---- */
+.post { max-width: 680px; margin: 0 auto; padding: 40px 24px 0; }
+.post__back {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+.post__back:hover { color: var(--accent); }
+.post__head { margin-bottom: 36px; }
+.post__meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+}
+.post__title {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+.post__body { font-size: 1.08rem; }
+.post__body p { color: var(--text); margin: 0 0 22px; }
+.post__body h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 40px 0 14px;
+}
+.post__body ul { color: var(--text); padding-left: 22px; margin: 0 0 22px; }
+.post__body li { margin-bottom: 8px; }
+.post__body a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.post__nav { margin: 48px 0; padding-top: 28px; border-top: 1px solid var(--border); }
 .contact__lede { font-size: 1.2rem; color: var(--text-muted); margin: 0 0 28px; }
 .contact__links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
 .contact__link {

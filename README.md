@@ -1,35 +1,41 @@
 # tetikol.com
 
-Personal CV / portfolio site for **Serhat Tetikol, PhD** — a static site
+Personal site for **H. Serhat Tetikol, PhD** — a static site
 (HTML + CSS + a little vanilla JS) hosted on GitHub Pages at
 [tetikol.com](https://tetikol.com).
 
 No build step, no framework. Edit the files, push, and the site updates.
 
+The site is focused on **AI-driven drug discovery**: a concise homepage
+highlighting that leadership, plus a weekly paper-review blog.
+
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | All page content and structure |
-| `styles.css` | Styling, light/dark themes |
+| `index.html` | Homepage (hero, focus, experience, recognition, writing, contact) |
+| `blog/index.html` | Blog listing — one card per post |
+| `blog/welcome.html` | First post; also the template for new posts |
+| `styles.css` | Styling, light/dark themes (shared by all pages) |
 | `script.js` | Theme toggle + footer year |
 | `CNAME` | Binds the site to `tetikol.com` (do not delete) |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
-## Editing the content
+## Editing the homepage
 
-Everything you need to personalize lives in `index.html`. Search for the word
-`Placeholder` / `<em>…</em>` markers and replace them with your real details:
+Everything is in `index.html`, organized into numbered sections (Focus,
+Experience, Recognition, Writing, Contact). Edit the text directly. The color
+accent, fonts, and spacing are CSS variables at the top of `styles.css`.
 
-- **About** — your bio (section 01)
-- **Experience** — roles, orgs, dates (section 02)
-- **Education** — degrees (section 03)
-- **Research & Skills** — the three cards + toolbox tags (section 04)
-- **Publications** — papers, or just link Google Scholar (section 05)
-- **Contact** — update the email (`hello@tetikol.com`) and links (section 06)
+## Adding a blog post
 
-The color accent, fonts, and spacing are all defined as CSS variables at the
-top of `styles.css` if you want to restyle.
+1. Copy `blog/welcome.html` to `blog/<slug>.html` (e.g. `blog/alphafold3.html`).
+2. Edit the title, `<time>` date, tag, and body inside the `.post__body` block.
+3. In `blog/index.html`, copy the `<li class="post-card">` block and paste a new
+   one **at the top** of the `<ul class="post-list">` (newest first), pointing its
+   link at your new file and updating the date, tag, title, and excerpt.
+
+That's it — no build step. Commit and push, and the post is live.
 
 ## Publishing on GitHub Pages
 
