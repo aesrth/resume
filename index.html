@@ -68,6 +68,9 @@
 
   <main id="main">
     <section id="top" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <span id="hero-hint" class="hero-hint" aria-hidden="true">prod the antibody &middot; drag it &middot; watch it bind</span>
+      <button id="hero-regen" class="hero-regen" type="button" aria-label="Generate a new antibody">&#8635; new antibody</button>
       <div class="hero__inner">
         <img class="hero__avatar" src="/assets/headshot.jpg" width="120" height="120"
              alt="Serhat Tetikol" />
@@ -249,5 +252,6 @@
   </footer>
 
   <script src="/script.js"></script>
+  <script src="/assets/antibody.js" defer></script>
 </body>
 </html>
