@@ -183,54 +183,8 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .hero {
   padding: 96px 0 72px;
   border: none;
-  position: relative;
-  overflow: hidden;
-  min-height: 460px;
 }
-#hero-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  touch-action: pan-y;      /* keep vertical page scroll on mobile */
-  cursor: grab;
-}
-#hero-canvas:active { cursor: grabbing; }
-.hero-hint {
-  position: absolute;
-  right: 4px;
-  bottom: 10px;
-  z-index: 2;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  color: var(--text-faint);
-  pointer-events: none;
-  opacity: 0.75;
-  transition: opacity 0.5s ease;
-}
-.hero-hint.is-hidden { opacity: 0; }
-.hero-regen {
-  position: absolute;
-  right: 4px;
-  top: 8px;
-  z-index: 2;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  background: color-mix(in srgb, var(--bg-elev) 70%, transparent);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 5px 12px;
-  cursor: pointer;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-.hero-regen:hover { color: var(--accent); border-color: var(--accent); }
-/* let the canvas receive pointer play everywhere except on real controls */
-.hero__inner { animation: rise 0.7s ease both; position: relative; z-index: 1; pointer-events: none; }
-.hero__inner a,
-.hero__inner button,
-.hero__avatar { pointer-events: auto; }
+.hero__inner { animation: rise 0.7s ease both; }
 .hero__avatar {
   width: 120px;
   height: 120px;

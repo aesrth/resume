@@ -18,8 +18,6 @@ highlighting that leadership, plus a weekly paper-review blog.
 | `blog/welcome.html` | First post; also the template for new posts |
 | `styles.css` | Styling, light/dark themes (shared by all pages) |
 | `script.js` | Theme toggle + footer year |
-| `assets/antibody.js` | Interactive hero: soft-body antibody + antigen you can prod/drag |
-| `assets/og.png` | Social share image; `assets/headshot.jpg` — hero photo |
 | `CNAME` | Binds the site to `tetikol.com` (do not delete) |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
